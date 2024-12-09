@@ -26,7 +26,7 @@ async function predictClassification(model, image) {
 
         return {
             confidenceScore,  
-            result,           // Mengubah label menjadi result
+            result,         
             suggestion        
         };
 
