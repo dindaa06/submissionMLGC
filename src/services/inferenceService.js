@@ -31,8 +31,7 @@ async function predictClassification(model, image) {
         };
 
     } catch (error) {
-        console.error('Error during prediction:', error.message);
-        throw new InputError(`Terjadi kesalahan dalam melakukan prediksi: ${error.message}`);
+        throw new InputError("Terjadi kesalahan dalam melakukan prediksi");
     }
 }
 
