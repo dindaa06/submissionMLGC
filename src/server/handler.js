@@ -14,7 +14,7 @@ async function postPredictHandler(request, h) {
     result = predictionResult.result;  // Perubahan: ganti label menjadi result
     suggestion = predictionResult.suggestion;
   } catch (error) {
-    console.error('Error during prediction:', error);
+    console.error('Error during prediction:');
     return h.response({
       status: 'fail',
       message: 'Terjadi kesalahan dalam melakukan prediksi',
